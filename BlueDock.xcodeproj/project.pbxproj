@@ -1,0 +1,310 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F9A48AC22BD09F6400658561 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A48AC12BD09F6400658561 /* main.swift */; };
+		F9A48AC92BD0A06300658561 /* Daemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A48AC82BD0A06300658561 /* Daemon.swift */; };
+		F9A48ACB2BD1069A00658561 /* IOBluetoothDevice+get.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A48ACA2BD1069A00658561 /* IOBluetoothDevice+get.swift */; };
+		F9A48ACD2BD106F500658561 /* IOBluetoothDevice+connect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A48ACC2BD106F500658561 /* IOBluetoothDevice+connect.swift */; };
+		F9A48ACF2BD107F600658561 /* IOBluetoothDevice+disconnect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A48ACE2BD107F600658561 /* IOBluetoothDevice+disconnect.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F9A48ABC2BD09F6400658561 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F9A48ABE2BD09F6400658561 /* BlueDockDaemon */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BlueDockDaemon; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9A48AC12BD09F6400658561 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		F9A48AC82BD0A06300658561 /* Daemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Daemon.swift; sourceTree = "<group>"; };
+		F9A48ACA2BD1069A00658561 /* IOBluetoothDevice+get.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IOBluetoothDevice+get.swift"; sourceTree = "<group>"; };
+		F9A48ACC2BD106F500658561 /* IOBluetoothDevice+connect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IOBluetoothDevice+connect.swift"; sourceTree = "<group>"; };
+		F9A48ACE2BD107F600658561 /* IOBluetoothDevice+disconnect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IOBluetoothDevice+disconnect.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F9A48ABB2BD09F6400658561 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F9A48AB52BD09F6400658561 = {
+			isa = PBXGroup;
+			children = (
+				F9A48AC02BD09F6400658561 /* BlueDockDaemon */,
+				F9A48ABF2BD09F6400658561 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F9A48ABF2BD09F6400658561 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F9A48ABE2BD09F6400658561 /* BlueDockDaemon */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F9A48AC02BD09F6400658561 /* BlueDockDaemon */ = {
+			isa = PBXGroup;
+			children = (
+				F9A48AC12BD09F6400658561 /* main.swift */,
+				F9A48AC82BD0A06300658561 /* Daemon.swift */,
+				F9A48ACA2BD1069A00658561 /* IOBluetoothDevice+get.swift */,
+				F9A48ACC2BD106F500658561 /* IOBluetoothDevice+connect.swift */,
+				F9A48ACE2BD107F600658561 /* IOBluetoothDevice+disconnect.swift */,
+			);
+			path = BlueDockDaemon;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F9A48ABD2BD09F6400658561 /* BlueDockDaemon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9A48AC52BD09F6400658561 /* Build configuration list for PBXNativeTarget "BlueDockDaemon" */;
+			buildPhases = (
+				F9A48ABA2BD09F6400658561 /* Sources */,
+				F9A48ABB2BD09F6400658561 /* Frameworks */,
+				F9A48ABC2BD09F6400658561 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlueDockDaemon;
+			productName = BlueDock;
+			productReference = F9A48ABE2BD09F6400658561 /* BlueDockDaemon */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F9A48AB62BD09F6400658561 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					F9A48ABD2BD09F6400658561 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = F9A48AB92BD09F6400658561 /* Build configuration list for PBXProject "BlueDock" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F9A48AB52BD09F6400658561;
+			productRefGroup = F9A48ABF2BD09F6400658561 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F9A48ABD2BD09F6400658561 /* BlueDockDaemon */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F9A48ABA2BD09F6400658561 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9A48AC22BD09F6400658561 /* main.swift in Sources */,
+				F9A48ACD2BD106F500658561 /* IOBluetoothDevice+connect.swift in Sources */,
+				F9A48AC92BD0A06300658561 /* Daemon.swift in Sources */,
+				F9A48ACB2BD1069A00658561 /* IOBluetoothDevice+get.swift in Sources */,
+				F9A48ACF2BD107F600658561 /* IOBluetoothDevice+disconnect.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F9A48AC32BD09F6400658561 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F9A48AC42BD09F6400658561 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		F9A48AC62BD09F6400658561 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JHL252DPF9;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F9A48AC72BD09F6400658561 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JHL252DPF9;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F9A48AB92BD09F6400658561 /* Build configuration list for PBXProject "BlueDock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9A48AC32BD09F6400658561 /* Debug */,
+				F9A48AC42BD09F6400658561 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9A48AC52BD09F6400658561 /* Build configuration list for PBXNativeTarget "BlueDockDaemon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9A48AC62BD09F6400658561 /* Debug */,
+				F9A48AC72BD09F6400658561 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F9A48AB62BD09F6400658561 /* Project object */;
+}
