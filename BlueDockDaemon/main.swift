@@ -10,13 +10,16 @@ import Foundation
 import Darwin
 import Cocoa
 
-let daemon = Daemon(
-    screenId: 458624307,
-    addressStrings: [
-        "90:9C:4A:05:BD:58",
-        "90:9C:4A:A9:7F:D4"
-    ]
-)
+let daemon = await MainActor.run {
+    return Daemon(
+        screenId: 458624307,
+        addressStrings: [
+            "90:9C:4A:05:BD:58",
+            "90:9C:4A:A9:7F:D4"
+        ]
+    )
+}
+
 withExtendedLifetime(daemon) {
     daemon.start()
     

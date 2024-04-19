@@ -9,6 +9,7 @@ import Foundation
 import IOBluetooth
 import Cocoa
 
+@MainActor
 final class Daemon: NSObject, IOBluetoothDevicePairDelegate{
     private let screenId: CGDirectDisplayID
     private let devices: [IOBluetoothDevice]
@@ -30,12 +31,13 @@ final class Daemon: NSObject, IOBluetoothDevicePairDelegate{
             object: NSApp,
             queue: OperationQueue.main
         ) { [weak self] notification -> Void in
-            self?.reflectState()
+            guard let self else { return }
+            Task { @MainActor [weak self] in
+                self?.reflectState()
+            }
         }
         
-        DispatchQueue.main.async {
-            self.reflectState()
-        }
+        self.reflectState()
     }
     
     func stop() {
@@ -52,7 +54,7 @@ final class Daemon: NSObject, IOBluetoothDevicePairDelegate{
         
         Task.detached {
             for device in devices {
-                print("Updating state for device \(device.label)")
+                print("Updating state for device \(device.nameOrAddress!)")
                 
                 if docked {
                     await device.connect()
@@ -71,16 +73,11 @@ final class Daemon: NSObject, IOBluetoothDevicePairDelegate{
     }
     
     deinit {
-        stop()
-    }
-}
-
-extension IOBluetoothDevice {
-    var label: String {
-        if let name = self.name, !name.isEmpty {
-            return name
-        }
+        guard let observer = self.observer else { return }
+        self.observer = nil
         
-        return "\(self)"
+        Task { @MainActor [observer] in
+            NotificationCenter.default.removeObserver(observer)
+        }
     }
 }
